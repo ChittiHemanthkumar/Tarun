@@ -1,0 +1,44 @@
+﻿function blockEnter(event) {
+    if (event.keyCode === 10 || event.keyCode === 13)
+        event.preventDefault();
+}
+
+function isDigit(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+
+    if (charCode > 31 && (charCode < 47 || charCode > 57 || charCode == 47)) {
+        return false;
+    }
+
+    return true;
+};
+function onlyAlphabets(e, t) {
+    try {
+        if (window.event) {
+            var charCode = window.event.keyCode;
+        }
+        else if (e) {
+            var charCode = e.which;
+        }
+        else { return true; }
+        if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || (charCode == 32))
+            return true;
+        else
+            return false;
+
+        //if (event.keyCode == 32) {
+        //    event.returnValue = false;
+        //    return false;
+        //}
+    }
+    catch (err) {
+        ShowMessage(err.Description);
+    }
+};
+
+function onKeyDown(event) {
+    if (event.keyCode != 9) {
+        event.preventDefault();
+    }
+};

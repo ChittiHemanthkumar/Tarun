@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/hemanthkumar%20chitti/Downloads/AU.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><title>
+	AU
+</title><meta name="description"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://aucoeonline.com/img/favicon.ico">
+
+    <!-- Google Fonts
+		============================================ -->
+    <link href="./Tarun_files/fonts.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/bootstrap.min.css">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/owl.carousel.css"><link rel="stylesheet" href="./Tarun_files/owl.theme.css"><link rel="stylesheet" href="./Tarun_files/owl.transitions.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/normalize.css">
+    <!-- meanmenu icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/meanmenu.min.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/main.css">
+    <!-- educate icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/educate-custon-icon.css">
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/morris.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/jquery.mCustomScrollbar.min.css">
+    <!-- metisMenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/metisMenu.min.css"><link rel="stylesheet" href="./Tarun_files/metisMenu-vertical.css">
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/fullcalendar.min.css"><link rel="stylesheet" href="./Tarun_files/fullcalendar.print.min.css">
+    <!-- modals CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/modals.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/style_Index.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/responsive.css">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="./Tarun_files/modernizr-2.8.3.min.js.download"></script>
+
+    <!-- Data Validatiobs JS
+		============================================ -->
+    <script src="./Tarun_files/Data_Validations.js.download"></script>
+
+    <!-- Data Validatiobs JS
+		============================================ -->
+    <link href="./Tarun_files/Loader.css" rel="stylesheet">
+
+    <!-- datepicker CSS
+		============================================ -->
+    <link rel="stylesheet" href="./Tarun_files/datepicker3.css">
+
+
+    <script>
+        function ShowMessage(message, messagetype) {
+            var cssclass;
+            switch (messagetype) {
+                case 'Success':
+                    cssclass = 'alert alert-success'
+                    break;
+                case 'Error':
+                    cssclass = 'alert alert-danger'
+                    break;
+                case 'Warning':
+                    cssclass = 'alert alert-warning'
+                    break;
+                default:
+                    cssclass = 'alert alert-info'
+            }
+
+            $('#alert_container').empty();
+            $('#alert_container').append('<div id="alert_div" style="margin: 0 0.5%; -webkit-box-shadow: 3px 4px 6px #999;margin-top: 70px;margin-right: -50px;" '
+                + 'class="alert fade in ' + cssclass + '"><a href="#" class="close" data-dismiss="alert"'
+                + ' aria-label="close" onclick="return alert_container_close();">&times;</a><strong>' + messagetype + '!</strong> <span>' + message + '</span></div>');
+            $('#alert_container').show();
+            window.setTimeout(function () {
+                $(".alert").fadeTo(2000, 500).slideUp(400, function () {
+                    $('#alert_container').hide();
+                });
+            }, 2000);
+
+            $(document).ready(function () {
+
+                window.setTimeout(function () {
+                    $(".alert").fadeTo(2000, 500).slideUp(400, function () {
+                        $(this).hide();
+                    });
+                }, 3000);
+            }
+
+            );
+        }
+
+        function alert_container_close() {
+            $('#alert_container').empty();
+        }
+    </script>
+    
+    
+     <script type="text/javascript">
+        function refresh() {
+            
+        }
+        function PrintResponse() {
+
+            var dvReport = document.getElementById("Resultsdiv");
+            var frame1 = dvReport.getElementsByTagName("iframe")[0];
+
+            if (navigator.appName.indexOf("Internet Explorer") != -1) {
+                frame1.name = frame1.id;
+                window.frames[frame1.id].focus();
+                window.frames[frame1.id].print();
+                btnGoBack.visible = false;
+                btnPrint.visible = false;
+            }
+            else {
+
+                var printContents = document.getElementById("Resultsdiv").innerHTML;
+                var originalContents = document.body.innerHTML;
+
+                document.body.innerHTML = printContents;
+
+                window.print();
+
+                document.body.innerHTML = originalContents;
+                btnGoBack.visible = false;
+                btnPrint.visible = false;
+
+            }
+        }
+        window.onafterprint = function () {
+
+            window.location.reload(true);
+
+        };
+    </script>
+    <link rel="icon" href="https://aucoeonline.com/fav_logo.png">
+    
+    <script src="./Tarun_files/jquery.min.js.download"></script>
+    <script src="./Tarun_files/bootstrap.min.js.download"></script>
+    <style>
+        @font-face {
+            font-family: "myFont";
+            src: url("Ubuntu.ttf");
+        }
+
+        * {
+            font-family: myFont;
+        }
+
+        .noBorder th, tr {
+            border: none !important;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            border: 1px solid #c5bfbf; /* Table Border Color */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+
+        div.polaroid {
+            /*width: 250px;*/
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            padding-top: 14px;
+        }
+
+        .watermark {
+            background-image: url("au-big-logo.png");
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #main {
+            margin: 0 auto;
+            display: flex;
+        }
+
+        #sidebar {
+            width: 200px;
+            float: left;
+        }
+
+        #page-wrap {
+            margin-left: 1px;
+        }
+    </style>
+    <style>
+        .rightAlign td {
+            text-align: center;
+        }
+    </style>
+
+    <style>
+        .beta td {
+            border-style: solid;
+        }
+
+        }
+    </style>
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+<body>
+                                            <div class="col-md-12 form-group" style="text-align: center">
+                                                <img src="./Tarun_files/Result_Logo.png" style="height: 10%; width: 300px; padding-top: 1px; padding-right: 15px">
+                                            </div>
+                                            <br>
+
+                                            <div id="div" class="form-horizontal">
+                                                <div class="form-group" hidden="hidden">
+                                                    <div class="col-sm-3"></div>
+                                                    <div class="col-sm-9" style="font-weight: bold; color: darkblue">
+                                                        <span id="ContentPlaceHolder1_lblTitle" style="text-align: center;">BSC SIXTH SEMESTER REGULAR EXAMINATIONS HELD IN JUL-2023</span>
+                                                    </div>
+                                                    <div class="col-sm-1"></div>
+                                                </div>
+
+
+                                                <div class="col-md-12 form-group" style="line-height: 0.52857143">
+                                                    <label for="test" style="font-weight: bold; font-size: medium;">Regd.No</label>
+                                                    <span>
+                                                        <span id="ContentPlaceHolder1_lblregno" class="control-label" style="font-weight: bold; font-size: medium;"> : 720123205127</span>
+                                                         
+                                                     
+                                                    
+                                                    </span>
+                                                </div>
+
+                                                <div class="col-md-12 form-group" style="line-height: 0.52857143">
+                                                    <label for="test" style="font-weight: bold; font-size: small;">Name</label>
+                                                    <span>
+                                                        <span id="ContentPlaceHolder1_lblName" class="control-label" style="font-weight: bold; font-size: small;"> : MANCHALA TARUN</span>
+                                                    </span>
+                                                </div>
+
+                                                <div class="col-md-12 form-group" style="line-height: 0.52857143" hidden="hidden">
+                                                    <label for="test" style="font-weight: bold; font-size: small;">Course</label>
+                                                    <span>
+                                                        <span id="ContentPlaceHolder1_lblCourse" class="control-label" style="font-weight: bold; font-size: small;"> : BSC</span>
+                                                    </span>
+                                                </div>
+
+                                                <div class="col-md-12 form-group" style="line-height: 0.52857143">
+                                                    <label for="test" style="font-weight: bold; font-size: small;">Semester</label>
+                                                    <span>
+                                                        <span id="ContentPlaceHolder1_lblSemester" class="control-label" style="font-weight: bold; font-size: small;"> : SIXTH SEMESTER</span>
+                                                    </span>
+                                                </div> 
+                                                <table border="1" style="width:100%"><tbody><tr align="center"><th rowspan="2" style="text-align:center;border;font-weight:bold;padding-left:7px; width: 43px">S.No</th><th rowspan="2" style="text-align:center;border;font-weight:bold;padding-left:10px; width: 80px"> PAPER CODE</th><th rowspan="2" style="text-align:center;border;font-weight:bold;padding-left:10px; width: 250px">PAPER NAME</th><th rowspan="1" style="text-align:center;border;font-weight:bold;padding-left:10px; width: 10px">GRADE</th><th rowspan="1" style="text-align:center;border;font-weight:bold;padding-left:10px; width: 10px">POINTS</th><th rowspan="2" style="text-align:center;border;font-weight:bold;padding-left:10px; width: 80px">MONTH-YEAR</th><th rowspan="2" style="text-align:center;border;font-weight:bold;padding-left:10px; width: 80px">REMARKS</th></tr><tr></tr><tr align="center"><td style="text-align:center">1</td><td>PV-INTERNSHIP-001</td><td>COMMUNITY SERVICE (2ND SEMESTER INTERNSHIP) </td><td style="text-align:center">O</td><td style="text-align:center">10</td><td>JUL-2023</td><td>PASSED IN SIXTH SEMESTER</td></tr><tr align="center"><td style="text-align:center">2</td><td>PV-INTERNSHIP-002</td><td>SHORT TERM INTERNSHIP (4TH SEMESTER INTERNSHIP)</td><td style="text-align:center">O</td><td style="text-align:center">10</td><td>JUL-2023</td><td>PASSED IN SIXTH SEMESTER</td></tr><tr align="center"><td style="text-align:center">3</td><td>PV-INTERNSHIP-003</td><td>LONG TERM INTERNSHIP (6TH SEMESTER INTERNSHIP)</td><td style="text-align:center">O</td><td style="text-align:center">10</td><td>JUL-2023</td><td>PASSED IN SIXTH SEMESTER</td></tr></tbody></table>
+                                                <br>  
+
+                                                 <div class="row">
+                                                    <div id="divCredits" class="form-horizontal">
+                                                        <div class="form-group">
+                                                            <div class="col-sm-1"></div>
+                                                            <div class="col-sm-10">
+                                                                <div class="col-sm-2">
+                                                                    <div style="font-weight: bold" class="col-sm-12">
+                                                                        <span id="ContentPlaceHolder1_SGPA" style="text-align: center; font-weight: bold; font-size: medium;color:blue">SGPA : 10.00</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <div style="font-weight: bold" class="col-sm-12">
+                                                                        <span id="ContentPlaceHolder1_CGPA1" style="text-align: center; font-weight: bold; font-size: medium;color:blue">CGPA1 : 5.83</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-2">
+                                                                    <div style="font-weight: bold" class="col-sm-12">
+                                                                        <span id="ContentPlaceHolder1_CGPA2" style="text-align: center; font-weight: bold; font-size: medium;color:blue">CGPA2 : 5.67 </span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-2">
+                                                                    <div style="font-weight: bold" class="col-sm-12">
+                                                                        <span id="ContentPlaceHolder1_CGPA3" style="text-align: center; font-weight: bold; font-size: medium;color:blue">CGPA3 : 5.75</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+
+
+                                                <div class="row">
+                                                    <div id="divremarks" class="form-horizontal">
+                                                        <div class="form-group">
+                                                            <div class="col-sm-2"></div>
+                                                            <div class="col-sm-10">
+                                                                <div style="padding-top: 20px; font-weight: bold" class="col-sm-10">
+                                                                    <span id="ContentPlaceHolder1_lblResultRemark" style="color:Green;text-align: center; font-weight: bold; font-size: medium;">REMARKS : PASSED IN SIXTH SEMESTER</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2"></div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+
+                                            </div>
+                                        </body></html>
